@@ -10,7 +10,7 @@
 namespace ProjectSushi {
     
     
-    public partial class Reserveren {
+    public partial class Bestellen {
         
         /// <summary>
         /// form1 control.
@@ -22,219 +22,255 @@ namespace ProjectSushi {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
-        /// txtVoornaam control.
+        /// cbSushi1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtVoornaam;
+        protected global::System.Web.UI.WebControls.CheckBox cbSushi1;
         
         /// <summary>
-        /// rfvVoornaam control.
+        /// cbSushi2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvVoornaam;
+        protected global::System.Web.UI.WebControls.CheckBox cbSushi2;
         
         /// <summary>
-        /// rvVoornaam control.
+        /// cbSushi3 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RangeValidator rvVoornaam;
+        protected global::System.Web.UI.WebControls.CheckBox cbSushi3;
         
         /// <summary>
-        /// txtAchternaam control.
+        /// cbSushi4 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtAchternaam;
+        protected global::System.Web.UI.WebControls.CheckBox cbSushi4;
         
         /// <summary>
-        /// rfvAchternaam control.
+        /// cbSushi5 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvAchternaam;
+        protected global::System.Web.UI.WebControls.CheckBox cbSushi5;
         
         /// <summary>
-        /// rvAchternaam control.
+        /// cbDrank1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RangeValidator rvAchternaam;
+        protected global::System.Web.UI.WebControls.CheckBox cbDrank1;
         
         /// <summary>
-        /// txtEmail control.
+        /// cbDrank2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtEmail;
+        protected global::System.Web.UI.WebControls.CheckBox cbDrank2;
         
         /// <summary>
-        /// rfvEmail control.
+        /// cbDrank3 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvEmail;
+        protected global::System.Web.UI.WebControls.CheckBox cbDrank3;
         
         /// <summary>
-        /// revEmail control.
+        /// cbDrank4 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RegularExpressionValidator revEmail;
+        protected global::System.Web.UI.WebControls.CheckBox cbDrank4;
         
         /// <summary>
-        /// txtTelefoonnummer control.
+        /// cbDrank5 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtTelefoonnummer;
+        protected global::System.Web.UI.WebControls.CheckBox cbDrank5;
         
         /// <summary>
-        /// rfvTelefoonnummer control.
+        /// btnZoek control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvTelefoonnummer;
+        protected global::System.Web.UI.WebControls.Button btnZoek;
         
         /// <summary>
-        /// cvTelefoonnummer control.
+        /// btnVoegToe control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CompareValidator cvTelefoonnummer;
+        protected global::System.Web.UI.WebControls.Button btnVoegToe;
         
         /// <summary>
-        /// txtOpmerking control.
+        /// btnVoegToe1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtOpmerking;
+        protected global::System.Web.UI.WebControls.Button btnVoegToe1;
         
         /// <summary>
-        /// cbVoorwaarden control.
+        /// btnVoegToe2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox cbVoorwaarden;
+        protected global::System.Web.UI.WebControls.Button btnVoegToe2;
         
         /// <summary>
-        /// ddlAantalPersonen control.
+        /// btnVoegToe3 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlAantalPersonen;
+        protected global::System.Web.UI.WebControls.Button btnVoegToe3;
         
         /// <summary>
-        /// rfvAantalPersonen control.
+        /// btnVoegToe4 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvAantalPersonen;
+        protected global::System.Web.UI.WebControls.Button btnVoegToe4;
         
         /// <summary>
-        /// txtCalender control.
+        /// btnVoegToe5 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtCalender;
+        protected global::System.Web.UI.WebControls.Button btnVoegToe5;
         
         /// <summary>
-        /// imgbtnCalender control.
+        /// btnVoegToe6 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ImageButton imgbtnCalender;
+        protected global::System.Web.UI.WebControls.Button btnVoegToe6;
         
         /// <summary>
-        /// rfvCalender control.
+        /// btnVoegToe7 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvCalender;
+        protected global::System.Web.UI.WebControls.Button btnVoegToe7;
         
         /// <summary>
-        /// rvCalender control.
+        /// btnVoegToe8 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RangeValidator rvCalender;
+        protected global::System.Web.UI.WebControls.Button btnVoegToe8;
         
         /// <summary>
-        /// Calender control.
+        /// btnVoegToe9 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Calendar Calender;
+        protected global::System.Web.UI.WebControls.Button btnVoegToe9;
         
         /// <summary>
-        /// ddlTijdsperiode control.
+        /// btnVoegToe10 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlTijdsperiode;
+        protected global::System.Web.UI.WebControls.Button btnVoegToe10;
         
         /// <summary>
-        /// rfvTijdsperiode control.
+        /// btnVoegToe11 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvTijdsperiode;
+        protected global::System.Web.UI.WebControls.Button btnVoegToe11;
         
         /// <summary>
-        /// btnReserveren control.
+        /// btnVoegToe12 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnReserveren;
+        protected global::System.Web.UI.WebControls.Button btnVoegToe12;
+        
+        /// <summary>
+        /// btnVoegToe13 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnVoegToe13;
+        
+        /// <summary>
+        /// btnVoegToe14 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnVoegToe14;
+        
+        /// <summary>
+        /// btnVerwijderen control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnVerwijderen;
+        
+        /// <summary>
+        /// btnBetalen control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnBetalen;
     }
 }

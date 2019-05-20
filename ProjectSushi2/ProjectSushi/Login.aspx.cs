@@ -13,5 +13,32 @@ namespace ProjectSushi
         {
 
         }
+
+        protected void btnVerstuur_Click(object sender, EventArgs e)
+        {
+            if (Page.IsValid)
+            {
+                if (cbVoorwaarden.Checked)
+                {
+                    string sVoornaam = txtNaam.Text;
+                    string sAchternaam = txtAchternaam.Text;
+                    string sEmail = txtEmail.Text;
+                    string sWachtwoord = txtWachtwoord.Text;
+                    Response.Redirect("~/home.aspx");
+                }
+                else
+                {
+                    Response.Write("U moet akkoord gaan met de policy & terms van Jecosushi");
+                }
+            }
+        }
+
+        protected void btnVerstuurLogin_Click(object sender, EventArgs e)
+        {
+            if (Page.IsValid)
+            {
+                Response.Redirect("~/home.aspx");
+            }
+        }
     }
 }

@@ -40,6 +40,15 @@ namespace ProjectSushi {
         protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvNaam;
         
         /// <summary>
+        /// rvNaam control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RangeValidator rvNaam;
+        
+        /// <summary>
         /// txtAchternaam control.
         /// </summary>
         /// <remarks>
@@ -56,6 +65,15 @@ namespace ProjectSushi {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvAchternaam;
+        
+        /// <summary>
+        /// rvAchternaam control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RangeValidator rvAchternaam;
         
         /// <summary>
         /// txtEmail control.

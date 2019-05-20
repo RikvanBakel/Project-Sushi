@@ -1,37 +1,39 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="WWVergeten.aspx.cs" Inherits="ProjectSushi.WWVergeten"  Theme="ProjectThemes"%>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="MenuKaart.aspx.cs" Inherits="ProjectSushi.MenuKaart" Theme="ProjectThemes" %>
 
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <title>Jeco Sushi</title>
 </head>
 <body>
     <form id="form1" runat="server">
+    <div>
+
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-            <a class="navbar-brand" href="#"><img src="JecoLogo.png" alt="Jeco Sushi" style="Width: 200px" /> </a>
+            <a class="navbar-brand" href="#"><img src="JecoLogo.png" alt="Jeco Sushi" width="200px"> </a>
             <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                 <li class="nav-item active">
-                    <asp:HyperLink CssClass="nav-link" ID="hlHome" runat="server" NavigateUrl="~/Home.aspx">Home</asp:HyperLink>
+                    <a class="nav-link" href="home.aspx">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="menukaart.aspx">Menu kaart</a>
+                    <a class="nav-link" href="MenuKaart.aspx">Menu kaart</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="bestellen.aspx">Bestellen</a>
+                    <a class="nav-link" href="Bestellen.aspx">Bestellen</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="Reserveren.aspx"">Reserveren</a>
+                    <a class="nav-link" href="Reserveren.aspx">Reserveren</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="Contact.aspx">Contact</a>
@@ -46,37 +48,23 @@
         </div>
     </nav>
 
-    <div class="container-fluid">
+    <section>
+        <br><br>
         <div class="container">
-            <h2 class="text-center" id="title">Wachtwoord vergeten</h2>
 
-            <hr />
-            <div class="row">
-                <div class="col-md-4">
-                </div>
-                <div class="col-md-5">
-                    <fieldset>
-                        <p class="text pull-center">Voor uw Email in en binnen enkele minuten verschijnt er een mail in uw inbox.</p>
-                        <div class="form-group">
-                            <asp:TextBox ID="txtEmail" runat="server"></asp:TextBox>
-                            <asp:RequiredFieldValidator ID="rfvEmail" runat="server" ErrorMessage="E-mail is vereist" ControlToValidate="txtEmail" ForeColor="Red" SetFocusOnError="True"></asp:RequiredFieldValidator>
-                            <asp:RegularExpressionValidator ID="revEmail" runat="server" ErrorMessage="E-mail is ongeldig" ControlToValidate="txtEmail" ForeColor="Red" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*" SetFocusOnError="True"></asp:RegularExpressionValidator>
-                        </div>
-                        <div class="form-check">
-                        </div>
-                        <div>
-                            <br />
-                            <asp:Button ID="btnVerstuur" runat="server" Text="Verzend" />
-                        </div>
-                    </fieldset>
-                </div>
-
-
+            <div class="col-md-12 wow animated fadeInLeft" data-wow-delay=".2s">
+                <h1 class="section-title">Menukaart:</h1>
             </div>
+            <div class="zoom">
+                <img src="Afbeeldingen/Menukaart1.jpg" class="img-fluid" alt="Responsive image" width=80%>
+            </div>
+            <div class="zoom">
+                <img src="Afbeeldingen/Menukaart2.jpg" class="img-fluid" alt="Responsive image" width=80%>
+            </div>
+
         </div>
-        <p class="text-center">
-        </p>
-    </div>
+        <br><br><br>
+    </section>
 
 
 
@@ -107,17 +95,17 @@
                     <ul class="list-inline mb-0">
                         <li class="list-inline-item mr-3">
                             <a href="#">
-                                <img src="afbeeldingen/Facebook.png" class="social" style="Width: 40px" />
+                                <img src="afbeeldingen/Facebook.png" class="social" width="40px">
                             </a>
                         </li>
                         <li class="list-inline-item mr-3">
                             <a href="#">
-                                <img src="afbeeldingen/Instagram.png" class="social" style="Width: 40px" />
+                                <img src="afbeeldingen/Instagram.png" class="social" width="40px">
                             </a>
                         </li>
                         <li class="list-inline-item">
                             <a href="#">
-                                <img src="afbeeldingen/Twitter.png" class="social" style="Width: 40px" />
+                                <img src="afbeeldingen/Twitter.png" class="social" width="40px">
                             </a>
                         </li>
                     </ul>
@@ -134,6 +122,7 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </div>
     </form>
 </body>
 </html>

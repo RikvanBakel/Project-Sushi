@@ -13,5 +13,16 @@ namespace ProjectSushi
         {
 
         }
+
+        protected void btnVerzenden_Click(object sender, EventArgs e)
+        {
+            if (Page.IsValid)
+            {
+                string sNaam = txtNaam.Text;
+                string sEmail = txtEmail.Text;
+                string sOnderwerp = txtOnderwerp.Text;//?
+                Response.Write("Bedankt voor u bericht, we reageren zo spoedig mogelijk");
+            }
+        }
     }
 }

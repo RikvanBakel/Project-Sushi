@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Reserveren.aspx.cs" Inherits="ProjectSushi.Reserveren" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Reserveren.aspx.cs" Inherits="ProjectSushi.Reserveren"  Theme="ProjectThemes"%>
 
 <!DOCTYPE html>
 
@@ -10,7 +10,6 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
-    <link href="http://localhost:65044/App_Themes/ProjectTheme/Style.css" rel="stylesheet" />
     <title>Jeco Sushi</title>
 </head>
 <body>
@@ -26,27 +25,28 @@
                 </a>
                 <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                     <li class="nav-item active">
-                        <a class="nav-link" href="Home.html">Home</a>
+                        <a class="nav-link" href="home.aspx">Home</a>
+                        <!--Server side navigeren?-->
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="Menukaart.html">Menu kaart</a>
+                        <a class="nav-link" href="menukaart.aspx">Menu kaart</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="Bestellen.html">Bestellen</a>
+                        <a class="nav-link" href="bestellen.aspx">Bestellen</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="Reserveren.html">Reserveren</a>
+                        <a class="nav-link" href="Reserveren.aspx"">Reserveren</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="Contact.html">Contact</a>
+                        <a class="nav-link" href="Contact.aspx">Contact</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="Over.html">Over</a>
+                        <a class="nav-link" href="Over.aspx">Over</a>
                     </li>
                 </ul>
-                <form class="form-inline my-2 my-lg-0">
-                    <a class="btn btn-link" href="Login.html">Log in</a>
-                </form>
+                <!--<form class="form-inline my-2 my-lg-0">-->
+                    <a class="btn btn-link" href="Login.aspx">Log in</a>
+                <!--</form>-->
             </div>
         </nav>
 
@@ -57,35 +57,38 @@
             <hr>
             <div class="row">
                 <div class="col-md-5">
-                    <form role="form" method="post" action="Reserveren.php">
+                    <!--<form role="form" method="post" action="Reserveren.php">-->
                         <fieldset>
                             <p class="text pull-center"> Persoonlijke gegevens</p>
                             <div class="form-group">
                                 Voornaam:
                                 <br />
+                                <!--Mag geen cijfers zijn instellen-->
                                 <asp:TextBox ID="txtVoornaam" runat="server"></asp:TextBox>
-                                <asp:RequiredFieldValidator ID="rfvVoornaam" runat="server" ErrorMessage="Voornaam is vereist" ControlToValidate="txtVoornaam" ForeColor="Red" SetFocusOnError="True"></asp:RequiredFieldValidator>
+                                <asp:RequiredFieldValidator ID="rfvVoornaam" runat="server" ErrorMessage="Voornaam is niet ingevuld" ControlToValidate="txtVoornaam" ForeColor="Red" SetFocusOnError="True" Display="Dynamic"></asp:RequiredFieldValidator>
+                                <asp:RangeValidator ID="rvVoornaam" runat="server" ErrorMessage="Naam moet letters zijn" MinimumValue="a" MaximumValue="z" ControlToValidate="txtVoornaam" Display="Dynamic" ForeColor="Red"></asp:RangeValidator>
                             </div>
                             <div class="form-group">
                                 Achternaam:
                                 <br />
                                 <asp:TextBox ID="txtAchternaam" runat="server"></asp:TextBox>
-                                <asp:RequiredFieldValidator ID="rfvAchternaam" runat="server" ErrorMessage="Achternaam is vereist" ControlToValidate="txtAchternaam" ForeColor="Red" SetFocusOnError="True"></asp:RequiredFieldValidator>
+                                <asp:RequiredFieldValidator ID="rfvAchternaam" runat="server" ErrorMessage="Achternaam is niet ingevuld" ControlToValidate="txtAchternaam" ForeColor="Red" SetFocusOnError="True" Display="Dynamic"></asp:RequiredFieldValidator>
+                                <asp:RangeValidator ID="rvAchternaam" runat="server" ErrorMessage="Achternaam moet letters zijn" MinimumValue="a" MaximumValue="z" ControlToValidate="txtAchternaam" Display="Dynamic" ForeColor="Red"></asp:RangeValidator>
                             </div>
 
                             <div class="form-group">
                                 Email:
                                 <br />
                                 <asp:TextBox ID="txtEmail" runat="server"></asp:TextBox>
-                                <asp:RequiredFieldValidator ID="rfvEmail" runat="server" ErrorMessage="Email is vereist" ControlToValidate="txtEmail" ForeColor="Red" SetFocusOnError="True"></asp:RequiredFieldValidator>
-                                <asp:RegularExpressionValidator ID="revEmail" runat="server" ErrorMessage="E-mail is ongeldig" ControlToValidate="txtEmail" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*" ForeColor="Red" SetFocusOnError="True"></asp:RegularExpressionValidator>
+                                <asp:RequiredFieldValidator ID="rfvEmail" runat="server" ErrorMessage="E-mail is niet ingevuld" ControlToValidate="txtEmail" ForeColor="Red" SetFocusOnError="True" Display="Dynamic"></asp:RequiredFieldValidator>
+                                <asp:RegularExpressionValidator ID="revEmail" runat="server" ErrorMessage="E-mail is ongeldig" ControlToValidate="txtEmail" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*" ForeColor="Red" SetFocusOnError="True" Display="Dynamic"></asp:RegularExpressionValidator>
                             </div>
                             <div class="form-group">
                                 Telefoonnummer:
                                 <br />
                                 <asp:TextBox ID="txtTelefoonnummer" runat="server"></asp:TextBox>
-                                <asp:RequiredFieldValidator ID="rfvTelefoonnummer" runat="server" ErrorMessage="Telefoon nummer is vereist" ControlToValidate="txtTelefoonnummer" ForeColor="Red" SetFocusOnError="True"></asp:RequiredFieldValidator>
-                                <asp:CompareValidator ID="cvTelefoonnummer" runat="server" ErrorMessage="Telefoon nummer is ongeldig" ControlToValidate="txtTelefoonnummer" Operator="DataTypeCheck" Type="Integer" ForeColor="Red" SetFocusOnError="True"></asp:CompareValidator>
+                                <asp:RequiredFieldValidator ID="rfvTelefoonnummer" runat="server" ErrorMessage="Telefoonnummer is niet ingevuld" ControlToValidate="txtTelefoonnummer" ForeColor="Red" SetFocusOnError="True" Display="Dynamic"></asp:RequiredFieldValidator>
+                                <asp:CompareValidator ID="cvTelefoonnummer" runat="server" ErrorMessage="Telefoonnummer moet cijfers zijn" ControlToValidate="txtTelefoonnummer" Operator="DataTypeCheck" Type="Integer" ForeColor="Red" SetFocusOnError="True" Display="Dynamic"></asp:CompareValidator>
                             </div>
                             <div class="form-group label-floating">
                                 Opmerking:
@@ -129,7 +132,24 @@
                                 <asp:ListItem>9</asp:ListItem>
                                 <asp:ListItem>10</asp:ListItem>
                             </asp:DropDownList>
-                            <asp:RequiredFieldValidator ID="rfvAantalPersonen" runat="server" ErrorMessage="Selecteer het aantal personen" InitialValue="-1" ControlToValidate="ddlAantalPersonen" ForeColor="Red" SetFocusOnError="True"></asp:RequiredFieldValidator>
+                            <asp:RequiredFieldValidator ID="rfvAantalPersonen" runat="server" ErrorMessage="Aantal personen is niet ingevuld" InitialValue="-1" ControlToValidate="ddlAantalPersonen" ForeColor="Red" SetFocusOnError="True" Display="Dynamic"></asp:RequiredFieldValidator>
+                        <div class="form-group">
+                            <label for="sel1">Datum:</label>
+                            <br />
+                            <asp:TextBox ID="txtCalender" runat="server"></asp:TextBox>
+                            <asp:ImageButton ID="imgbtnCalender" runat="server" Height="20px" ImageUrl="~/App_Themes/ProjectThemes/ProjectAfbeeldingen/calendar-3724556_960_720.jpg" OnClick="imgbtnCalender_Click" ValidationGroup="asdfs" />
+                            <asp:RequiredFieldValidator ID="rfvCalender" runat="server" ErrorMessage="Selecteer een datum" ControlToValidate="txtCalender" Display="Dynamic" ForeColor="Red"></asp:RequiredFieldValidator>
+                            <asp:RangeValidator ID="rvCalender" runat="server" ErrorMessage="Datum moet binnen 2 weken zijn" Display="Dynamic" ForeColor="Red" Type="Date" ControlToValidate="txtCalender"></asp:RangeValidator>
+                            <br />
+                            <asp:Calendar ID="Calender" runat="server" Font-Size="8pt" BackColor="#FFFFCC" BorderColor="#FFCC66" BorderWidth="1px" DayNameFormat="Shortest" Font-Names="Verdana" ForeColor="#663399" Height="200px" OnSelectionChanged="Calender_SelectionChanged" ShowGridLines="True" Width="220px" OnDayRender="Calender_DayRender">
+                                <DayHeaderStyle BackColor="#FFCC66" Font-Bold="True" Height="1px" />
+                                <NextPrevStyle Font-Size="9pt" ForeColor="#FFFFCC" />
+                                <OtherMonthDayStyle ForeColor="#CC9966" />
+                                <SelectedDayStyle BackColor="#CCCCFF" Font-Bold="True" />
+                                <SelectorStyle BackColor="#FFCC66" />
+                                <TitleStyle BackColor="#990000" Font-Bold="True" Font-Size="9pt" ForeColor="#FFFFCC" />
+                                <TodayDayStyle BackColor="#FFCC66" ForeColor="White" />
+                            </asp:Calendar>
                         </div>
                         <div class="form-group">
                             <label for="sel1">Tijdsperiode:</label>
@@ -140,17 +160,17 @@
                                 <asp:ListItem>2</asp:ListItem>
                                 <asp:ListItem>3</asp:ListItem>
                             </asp:DropDownList>
-                            <asp:RequiredFieldValidator ID="rfvTijdsperiode" runat="server" ErrorMessage="Kies tijdsperiode" ControlToValidate="ddlTijdsperiode" ForeColor="Red" InitialValue="-1" SetFocusOnError="True"></asp:RequiredFieldValidator>
+                            <asp:RequiredFieldValidator ID="rfvTijdsperiode" runat="server" ErrorMessage="Tijdsperiode niet geselecteerd" ControlToValidate="ddlTijdsperiode" ForeColor="Red" InitialValue="-1" SetFocusOnError="True" Display="Dynamic"></asp:RequiredFieldValidator>
                         </div>
 
                         <div>
                             <br />
-                            <asp:Button ID="btnReserveren" runat="server" Text="Reserveren" />
+                            <asp:Button ID="btnReserveren" runat="server" Text="Reserveren" OnClick="btnReserveren_Click" />
                         </div>
                 </div>
 
                 </fieldset>
-                </form>
+                <!--</form>-->
             </div>
         </div>
     </div>

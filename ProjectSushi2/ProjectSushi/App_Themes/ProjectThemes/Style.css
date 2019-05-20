@@ -1,0 +1,87 @@
+﻿.social:hover{
+opacity: 40%;
+}
+header.masthead {
+    position: relative;
+    background-color: #343a40;
+    background: url("Afbeeldingen/2.jpg") no-repeat center center;
+    background-size: cover;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+
+  }
+  
+  header.masthead .overlay {
+    position: absolute;
+    background-color: #212529;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.3;
+  }
+  
+  header.masthead h1 {
+    font-size: 2rem;
+  }
+  
+  @media (min-width: 768px) {
+    header.masthead {
+      padding-top: 12rem;
+      padding-bottom: 12rem;
+    }
+    header.masthead h1 {
+      font-size: 3rem;
+    }
+  }
+  .showcase .showcase-text {
+    padding: 3rem;
+  }
+  
+  .showcase .showcase-img {
+    min-height: 30rem;
+    background-size: cover;
+  }
+  
+  @media (min-width: 768px) {
+    .showcase .showcase-text {
+      padding: 7rem;
+    }
+  }
+  
+  .features-icons {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+  }
+  @media (min-width: 768px) {
+    header.masthead {
+      padding-top: 12rem;
+      padding-bottom: 12rem;
+    }
+    header.masthead h1 {
+      font-size: 3rem;
+    }
+  }
+  
+  .showcase .showcase-text {
+    padding: 3rem;
+  }
+  
+  .showcase .showcase-img {
+    min-height: 30rem;
+    background-size: cover;
+  }
+  footer.footer {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+  .section-padding {
+    padding: 45px 0;
+}
+.section-dark {
+    background-color: #f9f9f9;
+    z-index: -2;
+}
+.social:hover{
+  opacity: 0.3;
+}
