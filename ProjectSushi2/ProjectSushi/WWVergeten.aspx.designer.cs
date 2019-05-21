@@ -31,6 +31,15 @@ namespace ProjectSushi {
         protected global::System.Web.UI.WebControls.HyperLink hlHome;
         
         /// <summary>
+        /// hlLogin control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HyperLink hlLogin;
+        
+        /// <summary>
         /// txtEmail control.
         /// </summary>
         /// <remarks>
