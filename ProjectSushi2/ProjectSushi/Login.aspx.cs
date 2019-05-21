@@ -37,7 +37,10 @@ namespace ProjectSushi
         {
             if (Page.IsValid)
             {
-                Response.Redirect("~/home.aspx");
+                Session["LoginEmail"] = txtLoginEmail.Text;
+                Session["LoginWW"] = txtWachtwoordInloggen.Text;
+                hlLogin.Text = Session["LoginEmail"].ToString();
+                //Response.Redirect("~/home.aspx");
             }
         }
     }

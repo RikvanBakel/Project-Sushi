@@ -42,7 +42,8 @@
         </ul>
             <!--Form veranderen-->
             <!--<form class="form-inline my-2 my-lg-0">-->
-                <a class="btn btn-link" href="Login.aspx">Log in</a>
+                <!--<a class="btn btn-link" href="Login.aspx">Log in</a>-->
+            <asp:HyperLink ID="hlLogin" runat="server" Text="Login" NavigateUrl="~/Login.aspx"></asp:HyperLink>
             <!--</form>-->
         </div>
       </nav>
