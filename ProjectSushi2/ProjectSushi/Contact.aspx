@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Contact.aspx.cs" Inherits="ProjectSushi.Contact"%>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Contact.aspx.cs" Inherits="ProjectSushi.Contact" Theme="ProjectThemes"%>
 
 <!DOCTYPE html>
 
@@ -10,7 +10,6 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
-    <link href="http://localhost:65044/App_Themes/ProjectTheme/Style.css" rel="stylesheet" />
     <title>Jeco Sushi</title>
 </head>
 <body>
@@ -26,27 +25,27 @@
                 </a>
                 <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" href="Home.html">Home</a>
+                        <a class="nav-link" href="home.aspx">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="Menukaart.html">Menu kaart</a>
+                        <a class="nav-link" href="menukaart.aspx">Menu kaart</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="Bestellen.html">Bestellen</a>
+                        <a class="nav-link" href="bestellen.aspx">Bestellen</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="Reserveren.html">Reserveren</a>
+                        <a class="nav-link" href="Reserveren.aspx"">Reserveren</a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="Contact.html">Contact</a>
+                        <a class="nav-link" href="Contact.aspx">Contact</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="Over.html">Over</a>
+                        <a class="nav-link" href="Over.aspx">Over</a>
                     </li>
                 </ul>
-                <form class="form-inline my-2 my-lg-0">
-                    <a class="btn btn-link" href="Login.html">Log in</a>
-                </form>
+                <!--<form class="form-inline my-2 my-lg-0">-->
+                    <a class="btn btn-link" href="Login.aspx">Log in</a>
+                <!--</form>-->
             </div>
         </nav>
 
@@ -80,43 +79,44 @@
                 </div>
                 <!-- contact form -->
                 <div class="col-md-6 wow animated fadeInRight">
-                    <form class="shake" role="form" method="post" id="contactForm" name="contact-form" data-toggle="validator">
+                    <!--<form class="shake" role="form" method="post" id="contactForm" name="contact-form" data-toggle="validator">-->
                         <!-- Name -->
                         <div class="form-group label-floating">
                             <br />
                             <asp:TextBox ID="txtNaam" runat="server"></asp:TextBox>
-                            <asp:RequiredFieldValidator ID="rfvNaam" runat="server" ErrorMessage="Naam is vereist" ControlToValidate="txtNaam" ForeColor="Red" SetFocusOnError="True"></asp:RequiredFieldValidator>
+                            <asp:RequiredFieldValidator ID="rfvNaam" runat="server" ErrorMessage="Naam is niet ingevuld" ControlToValidate="txtNaam" ForeColor="Red" SetFocusOnError="True" Display="Dynamic"></asp:RequiredFieldValidator>
+                            <asp:RangeValidator ID="rvNaam" runat="server" ErrorMessage="Naam moet letters zijn" ControlToValidate="txtNaam" Display="Dynamic" ForeColor="Red" MaximumValue="z" MinimumValue="a"></asp:RangeValidator>
                             <div class="help-block with-errors"></div>
                         </div>
                         <!-- email -->
                         <div class="form-group label-floating">
                             <br />
                             <asp:TextBox ID="txtEmail" runat="server"></asp:TextBox>
-                            <asp:RequiredFieldValidator ID="rfvEmail" runat="server" ErrorMessage="Email is vereist" ControlToValidate="txtEmail" ForeColor="Red" SetFocusOnError="True"></asp:RequiredFieldValidator>
-                            <asp:RegularExpressionValidator ID="revEmail" runat="server" ErrorMessage="Email is ongeldig" ControlToValidate="txtEmail" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*" ForeColor="Red" SetFocusOnError="True"></asp:RegularExpressionValidator>
+                            <asp:RequiredFieldValidator ID="rfvEmail" runat="server" ErrorMessage="E-mail is niet ingevuld" ControlToValidate="txtEmail" ForeColor="Red" SetFocusOnError="True" Display="Dynamic"></asp:RequiredFieldValidator>
+                            <asp:RegularExpressionValidator ID="revEmail" runat="server" ErrorMessage="E-mail is ongeldig" ControlToValidate="txtEmail" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*" ForeColor="Red" SetFocusOnError="True" Display="Dynamic"></asp:RegularExpressionValidator>
                             <div class="help-block with-errors"></div>
                         </div>
                         <!-- Subject -->
                         <div class="form-group label-floating">
                             <br />
                             <asp:TextBox ID="txtOnderwerp" runat="server"></asp:TextBox>
-                            <asp:RequiredFieldValidator ID="rfvOnderwerp" runat="server" ErrorMessage="Onderwerp is vereist" ControlToValidate="txtOnderwerp" ForeColor="Red" SetFocusOnError="True"></asp:RequiredFieldValidator>
+                            <asp:RequiredFieldValidator ID="rfvOnderwerp" runat="server" ErrorMessage="Onderwerp is vereist" ControlToValidate="txtOnderwerp" ForeColor="Red" SetFocusOnError="True" Display="Dynamic"></asp:RequiredFieldValidator>
                             <div class="help-block with-errors"></div>
                         </div>
                         <!-- Message -->
                         <div class="form-group label-floating">
                             <br />
                             <asp:TextBox ID="txtTekst" runat="server" Rows="3" TextMode="MultiLine" Width="100%"></asp:TextBox>
-                            <asp:RequiredFieldValidator ID="rfvTekst" runat="server" ErrorMessage="Tekst is vereist" ControlToValidate="txtTekst" ForeColor="Red" SetFocusOnError="True"></asp:RequiredFieldValidator>
+                            <asp:RequiredFieldValidator ID="rfvTekst" runat="server" ErrorMessage="Vul opmerking in" ControlToValidate="txtTekst" ForeColor="Red" SetFocusOnError="True" Display="Dynamic"></asp:RequiredFieldValidator>
                             <div class="help-block with-errors"></div>
                         </div>
                         <!-- Form Submit -->
                         <div class="form-submit mt-5">
-                            <asp:Button ID="btnVerzenden" runat="server" Text="Verzenden" />
+                            <asp:Button ID="btnVerzenden" runat="server" Text="Verzenden" OnClick="btnVerzenden_Click" />
                             <div id="msgSubmit" class="h3 text-center hidden"></div>
                             <div class="clearfix"></div>
                         </div>
-                    </form>
+                    <!--</form>-->
                 </div>
             </div>
         </div>

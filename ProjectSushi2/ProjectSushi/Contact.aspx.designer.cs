@@ -40,6 +40,15 @@ namespace ProjectSushi {
         protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvNaam;
         
         /// <summary>
+        /// rvNaam control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RangeValidator rvNaam;
+        
+        /// <summary>
         /// txtEmail control.
         /// </summary>
         /// <remarks>

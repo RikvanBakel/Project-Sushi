@@ -94,6 +94,12 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Themes\ProjectThemes\ProjectAfbeeldingen\calendar-3724556_960_720.jpg" />
+    <Content Include="App_Themes\ProjectThemes\Style.css" />
+    <Content Include="Bestellen.aspx" />
+    <Content Include="Home.aspx" />
+    <Content Include="MenuKaart.aspx" />
+    <Content Include="Over.aspx" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -116,6 +122,13 @@
     <Content Include="WWVergeten.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Bestellen.aspx.cs">
+      <DependentUpon>Bestellen.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Bestellen.aspx.designer.cs">
+      <DependentUpon>Bestellen.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -126,12 +139,33 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MenuKaart.aspx.cs">
+      <DependentUpon>MenuKaart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MenuKaart.aspx.designer.cs">
+      <DependentUpon>MenuKaart.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Over.aspx.cs">
+      <DependentUpon>Over.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Over.aspx.designer.cs">
+      <DependentUpon>Over.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Reserveren.aspx.cs">

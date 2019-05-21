@@ -1,14 +1,13 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Login.aspx.cs" Inherits="ProjectSushi.Login" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Login.aspx.cs" Inherits="ProjectSushi.Login"  Theme="ProjectThemes"%>
 
 <!DOCTYPE html>
-
+<!--Images en masterpage maken-->
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
         <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <!--Attributen veranderen?-->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
-    <link href="App_Themes/ProjectTheme/Style.css" rel="stylesheet" />
     <title>Jeco Sushi</title>
 </head>
 <body>
@@ -23,28 +22,28 @@
           <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
             <li class="nav-item active">
                 <!--links veranderen-->
-              <a class="nav-link" href="Home.html">Home</a>
+              <a class="nav-link" href="home.aspx">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="Menukaart.html">Menu kaart</a>
+              <a class="nav-link" href="menukaart.aspx">Menu kaart</a>
             </li>
           <li class="nav-item">
-            <a class="nav-link" href="Bestellen.html">Bestellen</a>
+            <a class="nav-link" href="bestellen.aspx">Bestellen</a>
           </li>
         <li class="nav-item">
-            <a class="nav-link" href="Reserveren.html">Reserveren</a>
+            <a class="nav-link" href="Reserveren.aspx">Reserveren</a>
           </li>
         <li class="nav-item">
-            <a class="nav-link" href="Contact.html">Contact</a>
+            <a class="nav-link" href="Contact.aspx">Contact</a>
           </li>
         <li class="nav-item">
-            <a class="nav-link" href="Over.html">Over</a>
+            <a class="nav-link" href="Over.aspx">Over</a>
           </li>
         </ul>
             <!--Form veranderen-->
-            <form class="form-inline my-2 my-lg-0">
-                <a class="btn btn-link" href="Login.html">Log in</a>
-            </form>
+            <!--<form class="form-inline my-2 my-lg-0">-->
+                <a class="btn btn-link" href="Login.aspx">Log in</a>
+            <!--</form>-->
         </div>
       </nav>
         <div class="container-fluid">
@@ -55,41 +54,48 @@
                 <div class="row">
                     <div class="col-md-5">
                         <!--Form veranderen-->
-                        <form role="form" method="post" action="register.php">
+                        <!--<form role="form" method="post" action="register.php">-->
 						    <fieldset>
                                 <p class="text pull-center">Registreer</p>	
                                 <div class="form-group">
                                  Voornaam:
                                     <br />
                                     <asp:TextBox ID="txtNaam" runat="server"></asp:TextBox>
-                                    <asp:RequiredFieldValidator ID="rfvNaam" runat="server" ControlToValidate="txtNaam" ErrorMessage="Naam is vereist" ForeColor="Red" SetFocusOnError="True"></asp:RequiredFieldValidator>
+                                    <!--Alleen letters intstellen-->
+                                    <asp:RequiredFieldValidator ID="rfvNaam" runat="server" ControlToValidate="txtNaam" ErrorMessage="Naam is niet ingevuld" ForeColor="Red" SetFocusOnError="True" Display="Dynamic" ValidationGroup="vgRegistreren"></asp:RequiredFieldValidator>
+                                    <asp:RangeValidator ID="rvNaam" runat="server" ErrorMessage="Naam moet letters zijn" ControlToValidate="txtNaam" Display="Dynamic" ForeColor="Red" MaximumValue="z" MinimumValue="a"></asp:RangeValidator>
                                 </div>
                                 <div class="form-group">
                               Achternaam:
                                     <br />
                                     <asp:TextBox ID="txtAchternaam" runat="server"></asp:TextBox>
-                                    <asp:RequiredFieldValidator ID="rfvAchternaam" runat="server" ControlToValidate="txtAchternaam" ErrorMessage="Achternaam is vereist" ForeColor="Red" SetFocusOnError="True"></asp:RequiredFieldValidator>
+                                    <!--Alleen letters intstellen-->
+                                    <asp:RequiredFieldValidator ID="rfvAchternaam" runat="server" ControlToValidate="txtAchternaam" ErrorMessage="Achternaam is niet ingevuld" ForeColor="Red" SetFocusOnError="True" Display="Dynamic" ValidationGroup="vgRegistreren"></asp:RequiredFieldValidator>
+                                    <asp:RangeValidator ID="rvAchternaam" runat="server" ErrorMessage="Achternaam moet letters zijn" ControlToValidate="txtAchternaam" Display="Dynamic" ForeColor="Red" MaximumValue="z" MinimumValue="a"></asp:RangeValidator>
                                 </div>
+                                <!--Straat veld toevoegen-->
+                                <!--Huisnummer veld toevoegen-->
+                                <!--Toevoeging veld toevoegen-->
+                                <!--Telefoonnummer veld toevoegen-->
                                 <div class="form-group">
                                     Email:
                                     <br />
                                     <asp:TextBox ID="txtEmail" runat="server"></asp:TextBox>
-                                    <asp:RequiredFieldValidator ID="rfvEmail" runat="server" ControlToValidate="txtEmail" ErrorMessage="E-mail is vereist" ForeColor="Red" SetFocusOnError="True"></asp:RequiredFieldValidator>
-                                    <br />
-                                    <asp:RegularExpressionValidator ID="revEmail" runat="server" ControlToValidate="txtEmail" ErrorMessage="E-mail is niet geldig" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"></asp:RegularExpressionValidator>
+                                    <asp:RequiredFieldValidator ID="rfvEmail" runat="server" ControlToValidate="txtEmail" ErrorMessage="E-mail is niet ingevuld" ForeColor="Red" SetFocusOnError="True" Display="Dynamic" ValidationGroup="vgRegistreren"></asp:RequiredFieldValidator>
+                                    <asp:RegularExpressionValidator ID="revEmail" runat="server" ControlToValidate="txtEmail" ErrorMessage="E-mail is niet geldig" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*" ForeColor="Red" ValidationGroup="vgRegistreren"></asp:RegularExpressionValidator>
                                 </div>
                                 <div class="form-group">
                                     Wachtwoord:
                                     <br />
                                     <asp:TextBox ID="txtWachtwoord" runat="server" Style="margin-bottom: 0px" TextMode="Password"></asp:TextBox>
-                                    <asp:RequiredFieldValidator ID="rfvdWachtwoord" runat="server" ControlToValidate="txtWachtwoord" ErrorMessage="Wachtwoord is vereist" ForeColor="Red" SetFocusOnError="True"></asp:RequiredFieldValidator>
+                                    <asp:RequiredFieldValidator ID="rfvdWachtwoord" runat="server" ControlToValidate="txtWachtwoord" ErrorMessage="Wachtwoord is niet ingevuld" ForeColor="Red" SetFocusOnError="True" Display="Dynamic" ValidationGroup="vgRegistreren"></asp:RequiredFieldValidator>
                                 </div>
                                 <div class="form-group">
                                     Bevestig wachtwoord:
                                     <br />
                                     <asp:TextBox ID="txtHerhaalWW" runat="server" TextMode="Password"></asp:TextBox>
-                                    <asp:RequiredFieldValidator ID="rfvHerhaalWW" runat="server" ControlToValidate="txtHerhaalWW" ErrorMessage="Herhaal wachtwoord is vereist" ForeColor="Red" SetFocusOnError="True"></asp:RequiredFieldValidator>
-                                    <asp:CompareValidator ID="cvHerhaalWW" runat="server" ControlToCompare="txtWachtwoord" ControlToValidate="txtHerhaalWW" ErrorMessage="Wachtwoorden komen niet overeen" ForeColor="Red" SetFocusOnError="True"></asp:CompareValidator>
+                                    <asp:RequiredFieldValidator ID="rfvHerhaalWW" runat="server" ControlToValidate="txtHerhaalWW" ErrorMessage="Herhaal wachtwoord is vereist" ForeColor="Red" SetFocusOnError="True" Display="Dynamic" ValidationGroup="vgRegistreren"></asp:RequiredFieldValidator>
+                                    <asp:CompareValidator ID="cvHerhaalWW" runat="server" ControlToCompare="txtWachtwoord" ControlToValidate="txtHerhaalWW" ErrorMessage="Wachtwoorden komen niet overeen" ForeColor="Red" SetFocusOnError="True" Display="Dynamic" ValidationGroup="vgRegistreren"></asp:CompareValidator>
                                 </div>
                                 <div class="form-check">
                                     <label class="form-check-label">
@@ -100,10 +106,11 @@
                                 </div>
                                 <div>
                                     <br />
-                                    <asp:Button ID="btnVerstuur" runat="server" Text="Registreren" />
+                                    <!--Bericht bedankt voor het aanmaken van een account-->
+                                    <asp:Button ID="btnVerstuur" runat="server" Text="Registreren" OnClick="btnVerstuur_Click" ValidationGroup="vgRegistreren" />
                                 </div>
 						    </fieldset>		
-                        </form>
+                        <!--</form>-->
                     </div>
 				<div class="col-md-2">
 					<!-------null------>
@@ -111,29 +118,29 @@
 				
                     <div class="col-md-5">
                         <!--Form veranderen-->
-                        <form role="form">
+                        <!--<form role="form">-->
                             <fieldset>
                                 <p class="text">Log in door uw gegevens in te vullen </p>	
                                 <div class="form-group">
                                     Email:
                                     <br />
                                     <asp:TextBox ID="txtLoginEmail" runat="server"></asp:TextBox>
-                                    <asp:RequiredFieldValidator ID="rfdLoginEmail" runat="server" ErrorMessage="E-mail is vereist" ControlToValidate="txtLoginEmail" ForeColor="Red" SetFocusOnError="True"></asp:RequiredFieldValidator>
-                                    <asp:RegularExpressionValidator ID="revLoginEmail" runat="server" ErrorMessage="E-mail is niet geldig" ControlToValidate="txtLoginEmail" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*" ForeColor="Red" SetFocusOnError="True"></asp:RegularExpressionValidator>
+                                    <asp:RequiredFieldValidator ID="rfdLoginEmail" runat="server" ErrorMessage="E-mail is vereist" ControlToValidate="txtLoginEmail" ForeColor="Red" SetFocusOnError="True" Display="Dynamic" ValidationGroup="vgInloggen"></asp:RequiredFieldValidator>
+                                    <asp:RegularExpressionValidator ID="revLoginEmail" runat="server" ErrorMessage="E-mail is niet geldig" ControlToValidate="txtLoginEmail" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*" ForeColor="Red" SetFocusOnError="True" Display="Dynamic" ValidationGroup="vgInloggen"></asp:RegularExpressionValidator>
                                 </div>
                                 <div class="form-group">
                                     Wachtwoord:
                                     <br />
                                     <asp:TextBox ID="txtWachtwoordInloggen" runat="server" TextMode="Password"></asp:TextBox>
-                                    <asp:RequiredFieldValidator ID="rfdLoginWachtwoord" runat="server" ErrorMessage="Wachtwoord is vereist" ControlToValidate="txtWachtwoordInloggen" ForeColor="Red" SetFocusOnError="True"></asp:RequiredFieldValidator>
+                                    <asp:RequiredFieldValidator ID="rfdLoginWachtwoord" runat="server" ErrorMessage="Wachtwoord is vereist" ControlToValidate="txtWachtwoordInloggen" ForeColor="Red" SetFocusOnError="True" Display="Dynamic" ValidationGroup="vgInloggen"></asp:RequiredFieldValidator>
                                 </div>
-                                <asp:Button ID="btnVerstuurLogin" runat="server" Text="Inloggen" />
+                                <asp:Button ID="btnVerstuurLogin" runat="server" Text="Inloggen" OnClick="btnVerstuurLogin_Click" ValidationGroup="vgInloggen" />
                                 <!--Links maken-->
-                                <a class="btn btn-link" href="WachtwoordVergeten.html">Wachtwoord vergeten?</a>
+                                <a class="btn btn-link" href="WWVergeten.aspx">Wachtwoord vergeten?</a>
                                 <div>
                                 </div>
                             </fieldset>
-                        </form>
+                        <!--</form>-->
                     </div>
         </div>
                 <p class="text-center">
