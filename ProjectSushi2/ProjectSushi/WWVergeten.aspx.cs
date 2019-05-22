@@ -11,9 +11,9 @@ namespace ProjectSushi
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (Session["LoginEmail"] != null)
+            if (Session["Voornaam"] != null)
             {
-                hlLogin.Text = Session["LoginEmail"].ToString();
+                hlLogin.Text = Session["Voornaam"].ToString();
             }
         }
     }

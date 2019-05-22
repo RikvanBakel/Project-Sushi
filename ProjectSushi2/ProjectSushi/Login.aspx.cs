@@ -21,10 +21,14 @@ namespace ProjectSushi
                 if (cbVoorwaarden.Checked)
                 {
                     string sVoornaam = txtNaam.Text;
+                    Session["Voornaam"] = sVoornaam;
+                    hlLogin.Text = Session["Voornaam"].ToString();
                     string sAchternaam = txtAchternaam.Text;
                     string sEmail = txtEmail.Text;
+                    Session["Email"] = sEmail;
                     string sWachtwoord = txtWachtwoord.Text;
-                    Response.Redirect("~/home.aspx");
+                    Session["Wachtwoord"] = sWachtwoord;
+                   // Response.Redirect("~/home.aspx");
                 }
                 else
                 {
@@ -37,10 +41,11 @@ namespace ProjectSushi
         {
             if (Page.IsValid)
             {
-                Session["LoginEmail"] = txtLoginEmail.Text;
-                Session["LoginWW"] = txtWachtwoordInloggen.Text;
-                hlLogin.Text = Session["LoginEmail"].ToString();
-                //Response.Redirect("~/home.aspx");
+                if (txtLoginEmail.Text == Session["Email"].ToString() && txtWachtwoordInloggen.Text == Session["Wachtwoord"].ToString())
+                {
+                    hlLogin.Text = "Voornaam";
+                    //Response.Redirect("~/home.aspx");
+                }
             }
         }
     }
