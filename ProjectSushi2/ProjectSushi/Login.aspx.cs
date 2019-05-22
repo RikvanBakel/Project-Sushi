@@ -4,6 +4,8 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Data.SqlClient;
+using System.Configuration;
 
 namespace ProjectSushi
 {
@@ -11,8 +13,17 @@ namespace ProjectSushi
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            /*string CS = ConfigurationManager.ConnectionStrings["JecoSushi"].ConnectionString;
 
-        }
+            using (SqlConnection con = new SqlConnection(CS))
+            {
+                //Command toevoegen
+                SqlCommand cmd = new SqlCommand("", con);
+                con.Open();
+                GridView1.DataSource = cmd.ExecuteReader();
+                GridView1.DataBind();*/
+
+            }
 
         protected void btnVerstuur_Click(object sender, EventArgs e)
         {
@@ -28,15 +39,15 @@ namespace ProjectSushi
                     Session["Email"] = sEmail;
                     string sWachtwoord = txtWachtwoord.Text;
                     Session["Wachtwoord"] = sWachtwoord;
-                   // Response.Redirect("~/home.aspx");
+                    // Response.Redirect("~/home.aspx");
                 }
                 else
                 {
                     Response.Write("U moet akkoord gaan met de policy & terms van Jecosushi");
                 }
             }
-        }
-
+    }
+        
         protected void btnVerstuurLogin_Click(object sender, EventArgs e)
         {
             if (Page.IsValid)
