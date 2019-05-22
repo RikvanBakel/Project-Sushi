@@ -22,7 +22,7 @@
             <a class="navbar-brand" href="#"><img src="JecoLogo.png" alt="Jeco Sushi" style="Width: 200px" /> </a>
             <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                 <li class="nav-item active">
-                    <asp:HyperLink CssClass="nav-link" ID="hlHome" runat="server" NavigateUrl="~/Home.aspx">Home</asp:HyperLink>
+                    <asp:HyperLink CssClass="nav-link" ID="hlHome" runat="server" NavigateUrl="~/Home.aspx" Text="Home"></asp:HyperLink>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="menukaart.aspx">Menu kaart</a>
@@ -41,7 +41,7 @@
                 </li>
             </ul>
             <!--<form class="form-inline my-2 my-lg-0">-->
-                <a class="btn btn-link" href="Login.aspx">Log in</a>
+            <asp:HyperLink ID="hlLogin" runat="server" Text="Login" NavigateUrl="~/Login.aspx"></asp:HyperLink>
             <!--</form>-->
         </div>
     </nav>

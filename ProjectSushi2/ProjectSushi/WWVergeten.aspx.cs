@@ -11,7 +11,10 @@ namespace ProjectSushi
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (Session["Voornaam"] != null)
+            {
+                hlLogin.Text = Session["Voornaam"].ToString();
+            }
         }
     }
 }
