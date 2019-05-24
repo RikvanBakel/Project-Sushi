@@ -64,7 +64,14 @@
                                     <asp:TextBox ID="txtNaam" runat="server"></asp:TextBox>
                                     <!--Alleen letters intstellen-->
                                     <asp:RequiredFieldValidator ID="rfvNaam" runat="server" ControlToValidate="txtNaam" ErrorMessage="Naam is niet ingevuld" ForeColor="Red" SetFocusOnError="True" Display="Dynamic" ValidationGroup="vgRegistreren"></asp:RequiredFieldValidator>
-                                    <asp:RangeValidator ID="rvNaam" runat="server" ErrorMessage="Naam moet letters zijn" ControlToValidate="txtNaam" Display="Dynamic" ForeColor="Red" MaximumValue="z" MinimumValue="a"></asp:RangeValidator>
+                                    <asp:RegularExpressionValidator ID="revNaam" runat="server" ErrorMessage="Naam moet letters zijn" ControlToValidate="txtNaam" Display="Dynamic" ForeColor="Red" SetFocusOnError="True" ValidationExpression="^[A-Za-z]+$"></asp:RegularExpressionValidator>
+                                </div>
+                                <div class="form-group">
+                                 Tussenvoegsel:
+                                    <br />
+                                    <asp:TextBox ID="txtTussenvoegsel" runat="server"></asp:TextBox>
+                                    <!--Alleen letters intstellen-->
+                                    <asp:RangeValidator ID="rvTussnvoegsel" runat="server" ErrorMessage="Tussenvoegsel moet letters zijn" ControlToValidate="txtTussenvoegsel" Display="Dynamic" ForeColor="Red" MaximumValue="z" MinimumValue="a"></asp:RangeValidator>
                                 </div>
                                 <div class="form-group">
                               Achternaam:
@@ -72,7 +79,47 @@
                                     <asp:TextBox ID="txtAchternaam" runat="server"></asp:TextBox>
                                     <!--Alleen letters intstellen-->
                                     <asp:RequiredFieldValidator ID="rfvAchternaam" runat="server" ControlToValidate="txtAchternaam" ErrorMessage="Achternaam is niet ingevuld" ForeColor="Red" SetFocusOnError="True" Display="Dynamic" ValidationGroup="vgRegistreren"></asp:RequiredFieldValidator>
-                                    <asp:RangeValidator ID="rvAchternaam" runat="server" ErrorMessage="Achternaam moet letters zijn" ControlToValidate="txtAchternaam" Display="Dynamic" ForeColor="Red" MaximumValue="z" MinimumValue="a"></asp:RangeValidator>
+                                    <asp:RangeValidator ID="rvAchternaam" runat="server" ErrorMessage="Achternaam moet letters zijn" ControlToValidate="txtAchternaam" Display="Dynamic" ForeColor="Red" MinimumValue="a" MaximumValue="z"></asp:RangeValidator>
+                                </div>
+                                <div class="form-group">
+                                 Geboortedatum:
+                                    <br />
+                                    <asp:TextBox ID="txtGeboortedatum" runat="server"></asp:TextBox>
+                                    <!--Alleen letters intstellen-->
+                                    <asp:RequiredFieldValidator ID="rfvGeboortedatum" runat="server" ControlToValidate="txtGeboortedatum" ErrorMessage="Vul uw geboortedatum in" ForeColor="Red" SetFocusOnError="True" Display="Dynamic" ValidationGroup="vgRegistreren"></asp:RequiredFieldValidator>
+                                    <asp:RangeValidator ID="rvGeboortedatum" runat="server" ErrorMessage="U moet tussen de 0 en 125 jaar oud zijn" ControlToValidate="txtGeboortedatum" Display="Dynamic" ForeColor="Red" Type="Date" ValidationGroup="vgRegistreren"></asp:RangeValidator>
+                                    <asp:CompareValidator ID="cvGeboortedatum" runat="server" ControlToValidate="txtGeboortedatum" ErrorMessage="Geboortedatum moet een datum zijn" ForeColor="Red" SetFocusOnError="True" Display="Dynamic" ValidationGroup="vgRegistreren" Type="Date" Operator="DataTypeCheck"></asp:CompareValidator>
+                                </div>
+                                <div class="form-group">
+                              Straat:
+                                    <br />
+                                    <asp:TextBox ID="txtStraat" runat="server"></asp:TextBox>
+                                    <!--Alleen letters intstellen-->
+                                    <asp:RequiredFieldValidator ID="rfvStraat" runat="server" ControlToValidate="txtStraat" ErrorMessage="Straat is niet ingevuld" ForeColor="Red" SetFocusOnError="True" Display="Dynamic" ValidationGroup="vgRegistreren"></asp:RequiredFieldValidator>
+                                    <asp:RegularExpressionValidator ID="revStraat" runat="server" ErrorMessage="Straat moet letters zijn" ControlToValidate="txtStraat" Display="Dynamic" ForeColor="Red" ValidationExpression="^[A-Za-z]+$" SetFocusOnError="True" ValidationGroup="vgRegistreren"></asp:RegularExpressionValidator>
+                                </div>
+                                <div class="form-group">
+                                 Huisnummer:
+                                    <br />
+                                    <asp:TextBox ID="txtHuisnummer" runat="server"></asp:TextBox>
+                                    <!--Alleen letters intstellen-->
+                                    <asp:RequiredFieldValidator ID="rfvHuisnummer" runat="server" ControlToValidate="txtHuisnummer" ErrorMessage="Huisnummer is niet in gevuld" ForeColor="Red" SetFocusOnError="True" Display="Dynamic" ValidationGroup="vgRegistreren"></asp:RequiredFieldValidator>
+                                </div>
+                                <div class="form-group">
+                              Postcode:
+                                    <br />
+                                    <asp:TextBox ID="txtPostcode" runat="server"></asp:TextBox>
+                                    <!--Alleen letters intstellen-->
+                                    <asp:RequiredFieldValidator ID="rfvPostcode" runat="server" ControlToValidate="txtPostcode" ErrorMessage="Postcode is niet ingevuld" ForeColor="Red" SetFocusOnError="True" Display="Dynamic" ValidationGroup="vgRegistreren"></asp:RequiredFieldValidator>
+                                    <asp:RegularExpressionValidator ID="revPostcode" runat="server" ErrorMessage="Post code is ongeldig" ControlToValidate="txtPostcode" Display="Dynamic" ForeColor="Red" ValidationExpression="^[1-9][0-9]{3}[\s]?[A-Za-z]{2}$" SetFocusOnError="True" ValidationGroup="vgRegistreren"></asp:RegularExpressionValidator>
+                                </div>
+                                <div class="form-group">
+                              Woonplaats:
+                                    <br />
+                                    <asp:TextBox ID="txtWoonplaats" runat="server"></asp:TextBox>
+                                    <!--Alleen letters intstellen-->
+                                    <asp:RequiredFieldValidator ID="rfvWoonplaats" runat="server" ControlToValidate="txtWoonplaats" ErrorMessage="Woonplaats is niet ingevuld" ForeColor="Red" SetFocusOnError="True" Display="Dynamic" ValidationGroup="vgRegistreren"></asp:RequiredFieldValidator>
+                                    <asp:RegularExpressionValidator ID="revWoonplaats" runat="server" ErrorMessage="Woonplaats moet letters zijn" ControlToValidate="txtWoonplaats" Display="Dynamic" ForeColor="Red" ValidationExpression="^[A-Za-z]+$" SetFocusOnError="True" ValidationGroup="vgRegistreren"></asp:RegularExpressionValidator>
                                 </div>
                                 <!--Straat veld toevoegen-->
                                 <!--Huisnummer veld toevoegen-->
@@ -83,7 +130,7 @@
                                     <br />
                                     <asp:TextBox ID="txtEmail" runat="server"></asp:TextBox>
                                     <asp:RequiredFieldValidator ID="rfvEmail" runat="server" ControlToValidate="txtEmail" ErrorMessage="E-mail is niet ingevuld" ForeColor="Red" SetFocusOnError="True" Display="Dynamic" ValidationGroup="vgRegistreren"></asp:RequiredFieldValidator>
-                                    <asp:RegularExpressionValidator ID="revEmail" runat="server" ControlToValidate="txtEmail" ErrorMessage="E-mail is niet geldig" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*" ForeColor="Red" ValidationGroup="vgRegistreren"></asp:RegularExpressionValidator>
+                                    <asp:RegularExpressionValidator ID="revEmail" runat="server" ControlToValidate="txtEmail" ErrorMessage="E-mail is niet geldig" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*" ForeColor="Red" ValidationGroup="vgRegistreren" Display="Dynamic"></asp:RegularExpressionValidator>
                                 </div>
                                 <div class="form-group">
                                     Wachtwoord:
@@ -97,6 +144,14 @@
                                     <asp:TextBox ID="txtHerhaalWW" runat="server" TextMode="Password"></asp:TextBox>
                                     <asp:RequiredFieldValidator ID="rfvHerhaalWW" runat="server" ControlToValidate="txtHerhaalWW" ErrorMessage="Herhaal wachtwoord is vereist" ForeColor="Red" SetFocusOnError="True" Display="Dynamic" ValidationGroup="vgRegistreren"></asp:RequiredFieldValidator>
                                     <asp:CompareValidator ID="cvHerhaalWW" runat="server" ControlToCompare="txtWachtwoord" ControlToValidate="txtHerhaalWW" ErrorMessage="Wachtwoorden komen niet overeen" ForeColor="Red" SetFocusOnError="True" Display="Dynamic" ValidationGroup="vgRegistreren"></asp:CompareValidator>
+                                </div>
+                                <div class="form-group">
+                              Telefoonnummer:
+                                    <br />
+                                    <asp:TextBox ID="txtTelefoonnummer" runat="server"></asp:TextBox>
+                                    <!--Alleen letters intstellen-->
+                                    <asp:RequiredFieldValidator ID="rfvTelefoonnummer" runat="server" ControlToValidate="txtTelefoonnummer" ErrorMessage="Telefoonnummer is niet ingevuld" ForeColor="Red" SetFocusOnError="True" Display="Dynamic" ValidationGroup="vgRegistreren"></asp:RequiredFieldValidator>
+                                    <asp:RegularExpressionValidator ID="revTelefoonnummer" runat="server" ErrorMessage="Is ongeldig" ControlToValidate="txtTelefoonnummer" Display="Dynamic" ForeColor="Red" ValidationExpression="^([\(]{1}[0-9]{3}[\)]{1}[\.| |\-]{0,1}|^[0-9]{3}[\.|\-| ]?)?[0-9]{3}(\.|\-| )?[0-9]{4}$" SetFocusOnError="True" ValidationGroup="vgRegistreren"></asp:RegularExpressionValidator>
                                 </div>
                                 <div class="form-check">
                                     <label class="form-check-label">
