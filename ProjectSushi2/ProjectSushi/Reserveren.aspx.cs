@@ -12,6 +12,7 @@ using System.Web.UI.WebControls.WebParts;
 using System.Web.UI.HtmlControls;
 using System.Configuration;
 using System.Security;
+using System.Data.SqlClient;
 
 namespace ProjectSushi
 {
@@ -25,6 +26,38 @@ namespace ProjectSushi
             }
             rvCalender.MinimumValue = DateTime.Now.ToString("d");
             rvCalender.MaximumValue = DateTime.Now.AddDays(14).ToString("d");
+
+            if (Session["email"] != null)
+            {
+                string email = Session["email"].ToString();
+                using (SqlConnection con = new SqlConnection())
+                {
+                    string connectionString = ConfigurationManager.ConnectionStrings["JecoSushi"].ConnectionString;
+                    con.ConnectionString = connectionString;
+                    string commandText = $"SELECT TOP 1 * FROM [dbo].[1A-Klant] WHERE Email = @p1";
+                    SqlCommand cmd = new SqlCommand(commandText, con);
+                    cmd.Parameters.AddWithValue("@p1", email);
+                    try
+                    {
+                        con.Open();
+                        var dr = cmd.ExecuteReader();
+                        dr.Read();
+                        if (dr.HasRows)
+                        {
+                            txtVoornaam.Text = dr["Voornaam"].ToString();
+                            txtAchternaam.Text = dr["Achternaam"].ToString();
+                            txtEmail.Text = dr["Email"].ToString();
+                            txtTelefoonnummer.Text = dr["Telefoonnummer"].ToString();
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        string msg = ex.Message;
+                    }
+
+                }
+
+            }
         }
 
         protected void ddlAantalPersonen_SelectedIndexChanged(object sender, EventArgs e)
@@ -42,11 +75,13 @@ namespace ProjectSushi
                     string sAchternaam = txtAchternaam.Text;
                     string sEmail = txtEmail.Text;
                     string telefoonnummer = txtTelefoonnummer.Text;
-                    Response.Write("Reservering is gelukt");
+                    policyEnTermsError.Attributes.Add("hidden","");
+                    reserveringGelukt.Attributes.Remove("hidden");
+                    //Response.Write("Reservering is gelukt");
                 }
                 else
                 {
-                    Response.Write("U moet akkoord gaan met de policy & terms van Jecosushi");
+                    policyEnTermsError.Attributes.Remove("hidden");
                 }
             }
         }

@@ -64,3 +64,106 @@ C:\Users\Rik\Source\Repos\Project-Sushi\ProjectSushi2\ProjectSushi\bin\Microsoft
 C:\Users\Rik\Source\Repos\Project-Sushi\ProjectSushi2\ProjectSushi\obj\Debug\ProjectSushi.csprojResolveAssemblyReference.cache
 C:\Users\Rik\Source\Repos\Project-Sushi\ProjectSushi2\ProjectSushi\obj\Debug\ProjectSushi.dll
 C:\Users\Rik\Source\Repos\Project-Sushi\ProjectSushi2\ProjectSushi\obj\Debug\ProjectSushi.pdb
+C:\Users\eevan\Downloads\Project-Sushi-master\Project-Sushi-master\ProjectSushi2\ProjectSushi\bin\ApplicationInsights.config
+C:\Users\eevan\Downloads\Project-Sushi-master\Project-Sushi-master\ProjectSushi2\ProjectSushi\bin\roslyn\csc.exe
+C:\Users\eevan\Downloads\Project-Sushi-master\Project-Sushi-master\ProjectSushi2\ProjectSushi\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\eevan\Downloads\Project-Sushi-master\Project-Sushi-master\ProjectSushi2\ProjectSushi\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\eevan\Downloads\Project-Sushi-master\Project-Sushi-master\ProjectSushi2\ProjectSushi\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\eevan\Downloads\Project-Sushi-master\Project-Sushi-master\ProjectSushi2\ProjectSushi\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\eevan\Downloads\Project-Sushi-master\Project-Sushi-master\ProjectSushi2\ProjectSushi\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\eevan\Downloads\Project-Sushi-master\Project-Sushi-master\ProjectSushi2\ProjectSushi\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\eevan\Downloads\Project-Sushi-master\Project-Sushi-master\ProjectSushi2\ProjectSushi\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\eevan\Downloads\Project-Sushi-master\Project-Sushi-master\ProjectSushi2\ProjectSushi\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\eevan\Downloads\Project-Sushi-master\Project-Sushi-master\ProjectSushi2\ProjectSushi\bin\roslyn\vbc.exe
+C:\Users\eevan\Downloads\Project-Sushi-master\Project-Sushi-master\ProjectSushi2\ProjectSushi\bin\roslyn\VBCSCompiler.exe
+C:\Users\eevan\Downloads\Project-Sushi-master\Project-Sushi-master\ProjectSushi2\ProjectSushi\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\eevan\Downloads\Project-Sushi-master\Project-Sushi-master\ProjectSushi2\ProjectSushi\bin\ProjectSushi.dll.config
+C:\Users\eevan\Downloads\Project-Sushi-master\Project-Sushi-master\ProjectSushi2\ProjectSushi\bin\ProjectSushi.dll
+C:\Users\eevan\Downloads\Project-Sushi-master\Project-Sushi-master\ProjectSushi2\ProjectSushi\bin\ProjectSushi.pdb
+C:\Users\eevan\Downloads\Project-Sushi-master\Project-Sushi-master\ProjectSushi2\ProjectSushi\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\eevan\Downloads\Project-Sushi-master\Project-Sushi-master\ProjectSushi2\ProjectSushi\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\eevan\Downloads\Project-Sushi-master\Project-Sushi-master\ProjectSushi2\ProjectSushi\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\eevan\Downloads\Project-Sushi-master\Project-Sushi-master\ProjectSushi2\ProjectSushi\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\eevan\Downloads\Project-Sushi-master\Project-Sushi-master\ProjectSushi2\ProjectSushi\bin\Microsoft.AI.Web.dll
+C:\Users\eevan\Downloads\Project-Sushi-master\Project-Sushi-master\ProjectSushi2\ProjectSushi\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\eevan\Downloads\Project-Sushi-master\Project-Sushi-master\ProjectSushi2\ProjectSushi\bin\Microsoft.ApplicationInsights.dll
+C:\Users\eevan\Downloads\Project-Sushi-master\Project-Sushi-master\ProjectSushi2\ProjectSushi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\eevan\Downloads\Project-Sushi-master\Project-Sushi-master\ProjectSushi2\ProjectSushi\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\eevan\Downloads\Project-Sushi-master\Project-Sushi-master\ProjectSushi2\ProjectSushi\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\eevan\Downloads\Project-Sushi-master\Project-Sushi-master\ProjectSushi2\ProjectSushi\bin\Microsoft.AI.Web.xml
+C:\Users\eevan\Downloads\Project-Sushi-master\Project-Sushi-master\ProjectSushi2\ProjectSushi\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\eevan\Downloads\Project-Sushi-master\Project-Sushi-master\ProjectSushi2\ProjectSushi\bin\Microsoft.ApplicationInsights.xml
+C:\Users\eevan\Downloads\Project-Sushi-master\Project-Sushi-master\ProjectSushi2\ProjectSushi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\eevan\Downloads\Project-Sushi-master\Project-Sushi-master\ProjectSushi2\ProjectSushi\obj\Debug\ProjectSushi.csprojAssemblyReference.cache
+C:\Users\eevan\Downloads\Project-Sushi-master\Project-Sushi-master\ProjectSushi2\ProjectSushi\obj\Debug\ProjectSushi.csproj.CoreCompileInputs.cache
+C:\Users\eevan\Downloads\Project-Sushi-master\Project-Sushi-master\ProjectSushi2\ProjectSushi\obj\Debug\ProjectSushi.csproj.CopyComplete
+C:\Users\eevan\Downloads\Project-Sushi-master\Project-Sushi-master\ProjectSushi2\ProjectSushi\obj\Debug\ProjectSushi.dll
+C:\Users\eevan\Downloads\Project-Sushi-master\Project-Sushi-master\ProjectSushi2\ProjectSushi\obj\Debug\ProjectSushi.pdb
+G:\Project Sushi\ProjectSushi2\ProjectSushi\bin\ApplicationInsights.config
+G:\Project Sushi\ProjectSushi2\ProjectSushi\bin\roslyn\csc.exe
+G:\Project Sushi\ProjectSushi2\ProjectSushi\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+G:\Project Sushi\ProjectSushi2\ProjectSushi\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+G:\Project Sushi\ProjectSushi2\ProjectSushi\bin\roslyn\Microsoft.CodeAnalysis.dll
+G:\Project Sushi\ProjectSushi2\ProjectSushi\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+G:\Project Sushi\ProjectSushi2\ProjectSushi\bin\roslyn\Microsoft.CSharp.Core.targets
+G:\Project Sushi\ProjectSushi2\ProjectSushi\bin\roslyn\Microsoft.VisualBasic.Core.targets
+G:\Project Sushi\ProjectSushi2\ProjectSushi\bin\roslyn\System.Collections.Immutable.dll
+G:\Project Sushi\ProjectSushi2\ProjectSushi\bin\roslyn\System.Reflection.Metadata.dll
+G:\Project Sushi\ProjectSushi2\ProjectSushi\bin\roslyn\vbc.exe
+G:\Project Sushi\ProjectSushi2\ProjectSushi\bin\roslyn\VBCSCompiler.exe
+G:\Project Sushi\ProjectSushi2\ProjectSushi\bin\roslyn\VBCSCompiler.exe.config
+G:\Project Sushi\ProjectSushi2\ProjectSushi\bin\ProjectSushi.dll.config
+G:\Project Sushi\ProjectSushi2\ProjectSushi\bin\ProjectSushi.dll
+G:\Project Sushi\ProjectSushi2\ProjectSushi\bin\ProjectSushi.pdb
+G:\Project Sushi\ProjectSushi2\ProjectSushi\bin\Microsoft.AI.Agent.Intercept.dll
+G:\Project Sushi\ProjectSushi2\ProjectSushi\bin\Microsoft.AI.DependencyCollector.dll
+G:\Project Sushi\ProjectSushi2\ProjectSushi\bin\Microsoft.AI.PerfCounterCollector.dll
+G:\Project Sushi\ProjectSushi2\ProjectSushi\bin\Microsoft.AI.ServerTelemetryChannel.dll
+G:\Project Sushi\ProjectSushi2\ProjectSushi\bin\Microsoft.AI.Web.dll
+G:\Project Sushi\ProjectSushi2\ProjectSushi\bin\Microsoft.AI.WindowsServer.dll
+G:\Project Sushi\ProjectSushi2\ProjectSushi\bin\Microsoft.ApplicationInsights.dll
+G:\Project Sushi\ProjectSushi2\ProjectSushi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+G:\Project Sushi\ProjectSushi2\ProjectSushi\bin\Microsoft.AI.DependencyCollector.xml
+G:\Project Sushi\ProjectSushi2\ProjectSushi\bin\Microsoft.AI.ServerTelemetryChannel.xml
+G:\Project Sushi\ProjectSushi2\ProjectSushi\bin\Microsoft.AI.Web.xml
+G:\Project Sushi\ProjectSushi2\ProjectSushi\bin\Microsoft.AI.WindowsServer.xml
+G:\Project Sushi\ProjectSushi2\ProjectSushi\bin\Microsoft.ApplicationInsights.xml
+G:\Project Sushi\ProjectSushi2\ProjectSushi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+G:\Project Sushi\ProjectSushi2\ProjectSushi\obj\Debug\ProjectSushi.csprojAssemblyReference.cache
+G:\Project Sushi\ProjectSushi2\ProjectSushi\obj\Debug\ProjectSushi.csproj.CoreCompileInputs.cache
+G:\Project Sushi\ProjectSushi2\ProjectSushi\obj\Debug\ProjectSushi.csproj.CopyComplete
+G:\Project Sushi\ProjectSushi2\ProjectSushi\obj\Debug\ProjectSushi.dll
+G:\Project Sushi\ProjectSushi2\ProjectSushi\obj\Debug\ProjectSushi.pdb
+C:\git\Project-Sushi\ProjectSushi2\ProjectSushi\bin\ApplicationInsights.config
+C:\git\Project-Sushi\ProjectSushi2\ProjectSushi\bin\roslyn\csc.exe
+C:\git\Project-Sushi\ProjectSushi2\ProjectSushi\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\git\Project-Sushi\ProjectSushi2\ProjectSushi\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\git\Project-Sushi\ProjectSushi2\ProjectSushi\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\git\Project-Sushi\ProjectSushi2\ProjectSushi\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\git\Project-Sushi\ProjectSushi2\ProjectSushi\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\git\Project-Sushi\ProjectSushi2\ProjectSushi\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\git\Project-Sushi\ProjectSushi2\ProjectSushi\bin\roslyn\System.Collections.Immutable.dll
+C:\git\Project-Sushi\ProjectSushi2\ProjectSushi\bin\roslyn\System.Reflection.Metadata.dll
+C:\git\Project-Sushi\ProjectSushi2\ProjectSushi\bin\roslyn\vbc.exe
+C:\git\Project-Sushi\ProjectSushi2\ProjectSushi\bin\roslyn\VBCSCompiler.exe
+C:\git\Project-Sushi\ProjectSushi2\ProjectSushi\bin\roslyn\VBCSCompiler.exe.config
+C:\git\Project-Sushi\ProjectSushi2\ProjectSushi\bin\ProjectSushi.dll.config
+C:\git\Project-Sushi\ProjectSushi2\ProjectSushi\bin\ProjectSushi.dll
+C:\git\Project-Sushi\ProjectSushi2\ProjectSushi\bin\ProjectSushi.pdb
+C:\git\Project-Sushi\ProjectSushi2\ProjectSushi\bin\Microsoft.AI.Agent.Intercept.dll
+C:\git\Project-Sushi\ProjectSushi2\ProjectSushi\bin\Microsoft.AI.DependencyCollector.dll
+C:\git\Project-Sushi\ProjectSushi2\ProjectSushi\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\git\Project-Sushi\ProjectSushi2\ProjectSushi\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\git\Project-Sushi\ProjectSushi2\ProjectSushi\bin\Microsoft.AI.Web.dll
+C:\git\Project-Sushi\ProjectSushi2\ProjectSushi\bin\Microsoft.AI.WindowsServer.dll
+C:\git\Project-Sushi\ProjectSushi2\ProjectSushi\bin\Microsoft.ApplicationInsights.dll
+C:\git\Project-Sushi\ProjectSushi2\ProjectSushi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\git\Project-Sushi\ProjectSushi2\ProjectSushi\bin\Microsoft.AI.DependencyCollector.xml
+C:\git\Project-Sushi\ProjectSushi2\ProjectSushi\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\git\Project-Sushi\ProjectSushi2\ProjectSushi\bin\Microsoft.AI.Web.xml
+C:\git\Project-Sushi\ProjectSushi2\ProjectSushi\bin\Microsoft.AI.WindowsServer.xml
+C:\git\Project-Sushi\ProjectSushi2\ProjectSushi\bin\Microsoft.ApplicationInsights.xml
+C:\git\Project-Sushi\ProjectSushi2\ProjectSushi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\git\Project-Sushi\ProjectSushi2\ProjectSushi\obj\Debug\ProjectSushi.csprojResolveAssemblyReference.cache
+C:\git\Project-Sushi\ProjectSushi2\ProjectSushi\obj\Debug\ProjectSushi.dll
+C:\git\Project-Sushi\ProjectSushi2\ProjectSushi\obj\Debug\ProjectSushi.pdb

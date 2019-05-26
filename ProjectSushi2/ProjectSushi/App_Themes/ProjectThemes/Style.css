@@ -1,9 +1,9 @@
-﻿.social:hover{
+﻿.social:hover {
 opacity: 40%;
 }
 header.masthead {
     position: relative;
-    background-color: #343a40;
+    background-color: #bc1a1a; /*#343a40;*/
     background: url("Afbeeldingen/2.jpg") no-repeat center center;
     background-size: cover;
     padding-top: 8rem;

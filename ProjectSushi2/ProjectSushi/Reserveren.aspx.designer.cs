@@ -40,13 +40,13 @@ namespace ProjectSushi {
         protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvVoornaam;
         
         /// <summary>
-        /// rvVoornaam control.
+        /// RegularExpressionValidator1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RangeValidator rvVoornaam;
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidator1;
         
         /// <summary>
         /// txtAchternaam control.
@@ -67,13 +67,13 @@ namespace ProjectSushi {
         protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvAchternaam;
         
         /// <summary>
-        /// rvAchternaam control.
+        /// RegularExpressionValidator2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RangeValidator rvAchternaam;
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidator2;
         
         /// <summary>
         /// txtEmail control.
@@ -146,6 +146,15 @@ namespace ProjectSushi {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.CheckBox cbVoorwaarden;
+        
+        /// <summary>
+        /// policyEnTermsError control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl policyEnTermsError;
         
         /// <summary>
         /// ddlAantalPersonen control.
@@ -236,5 +245,14 @@ namespace ProjectSushi {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnReserveren;
+        
+        /// <summary>
+        /// reserveringGelukt control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl reserveringGelukt;
     }
 }

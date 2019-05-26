@@ -31,8 +31,8 @@
                     <div class="navbar-nav">
                         <a class="nav-item nav-link" href="home.aspx">Home </a>
                         <a class="nav-item nav-link" href="menukaart.aspx">Menukaart</a>
-                        <a class="nav-item nav-link" href="reserveren.aspx">Reserveren</a>
                         <a class="nav-item nav-link active" href="bestellen.aspx">Bestellen<span class="sr-only">(current)</span></a>
+                        <a class="nav-item nav-link" href="reserveren.aspx">Reserveren</a>
                         <a class="nav-item nav-link" href="contact.aspx">Contact</a>
                         <a class="nav-item nav-link" href="over.aspx">Over</a>
                         <button type="button" class="navbar-nav nav btn nav-item nav-link" style="background-color: rgb(102,100,100);"><a href="Login.aspx">Inloggen</a></button>
